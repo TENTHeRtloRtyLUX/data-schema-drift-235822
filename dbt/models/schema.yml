@@ -1,0 +1,11 @@
+sources:
+  - name: stripe
+    tables:
+      - name: charges
+        columns:
+          - name: status
+            tests:
+              # Fail the run if Stripe EVER emits a status we haven't
+              # explicitly decided how to handle. Drift becomes loud.
+              - accepted_values:
+                  values: ['succeeded', 'refunded', 'failed', 'uncaptured']
