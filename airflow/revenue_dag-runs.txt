@@ -1,0 +1,9 @@
+DAG: revenue_daily   (last 7 runs)
+
+  2026-06-09   ✔ success   extract → transform → load → dbt_run   14m
+  2026-06-08   ✔ success   extract → transform → load → dbt_run   13m
+  2026-06-07   ✔ success   extract → transform → load → dbt_run   14m
+  2026-06-06   ✔ success   extract → transform → load → dbt_run   15m
+  2026-06-05   ✔ success   (this is where finance says it went wrong)
+  2026-06-04   ✔ success   extract → transform → load → dbt_run   13m
+  2026-06-03   ✔ success   extract → transform → load → dbt_run   14m
