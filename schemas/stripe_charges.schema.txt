@@ -1,0 +1,8 @@
+Source: stripe.charges  (sampled this week)
+
+  id            string
+  amount_cents  integer
+  currency      string
+  status        string     ← values seen: "succeeded", "refunded", "failed",
+                                           "uncaptured"   ← NEW since 06-05
+  created_at    timestamp
